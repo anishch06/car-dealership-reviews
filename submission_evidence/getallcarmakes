@@ -1,0 +1,5 @@
+SAMPLE COMMAND
+curl http://127.0.0.1:8000/api/cars/
+
+SAMPLE RESPONSE
+{"makes":[{"make":"Toyota","models":["Camry","Corolla","RAV4"]},{"make":"Honda","models":["Civic","Accord","CR-V"]},{"make":"Ford","models":["Mustang","Escape","Explorer"]}]}

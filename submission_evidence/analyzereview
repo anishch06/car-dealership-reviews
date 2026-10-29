@@ -1,0 +1,5 @@
+SAMPLE COMMAND
+curl -X POST -H "Content-Type: application/json" -d "{\"review\":\"Fantastic services\"}" http://127.0.0.1:8000/api/analyze-review/
+
+SAMPLE RESPONSE
+{"review":"Fantastic services","sentiment":"positive","note":"Simple keyword demo; not a production ML model."}

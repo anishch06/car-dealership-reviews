@@ -1,0 +1,6 @@
+SAMPLE COMMAND (demo account must exist; CSRF is exempted on this demo API)
+curl -i -c cookies.txt -H "Content-Type: application/json" -d "{\"username\":\"demo\",\"password\":\"demo123\"}" http://127.0.0.1:8000/api/login/
+
+SAMPLE RESPONSE
+HTTP/1.1 200 OK
+{"message": "Login successful", "username": "demo"}

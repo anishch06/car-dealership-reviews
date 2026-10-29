@@ -1,0 +1,6 @@
+SAMPLE COMMAND
+curl -i -b cookies.txt -X POST http://127.0.0.1:8000/api/logout/
+
+SAMPLE RESPONSE
+HTTP/1.1 200 OK
+{"message": "Logout successful"}

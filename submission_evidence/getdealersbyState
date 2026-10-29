@@ -1,0 +1,5 @@
+SAMPLE COMMAND
+curl http://127.0.0.1:8000/api/dealers/state/Kansas/
+
+SAMPLE RESPONSE (example)
+{"state":"Kansas","dealers":[{"id":1,"full_name":"Prairie Auto Group","city":"Topeka","state":"Kansas","address":"100 Demo Road","phone":"555-0101"}]}

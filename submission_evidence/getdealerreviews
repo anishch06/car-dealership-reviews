@@ -1,0 +1,5 @@
+SAMPLE COMMAND
+curl http://127.0.0.1:8000/api/dealers/1/reviews/
+
+SAMPLE RESPONSE (example)
+{"dealer_id":1,"reviews":[{"id":1,"name":"Demo User","review":"Fantastic services","purchase":true,"created_at":"2026-10-29T10:00:00Z"}]}

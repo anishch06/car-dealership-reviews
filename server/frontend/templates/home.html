@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Car Dealership Reviews</title><link rel="stylesheet" href="/static/site.css"></head>
+<body><nav><b>Car Dealership Reviews</b><a href="/">Home</a><a href="/about/">About Us</a><a href="/contact/">Contact Us</a><a href="/admin/">Admin</a></nav>
+<main><h1>Find the Best Car Dealers</h1><p>Browse demo dealer data and review the API endpoints.</p><div id="dealers" class="grid">Loading dealers…</div></main>
+<script>
+fetch('/api/dealers/').then(r=>r.json()).then(data=>{
+ const root=document.getElementById('dealers');
+ if(!data.dealers.length){root.textContent='No dealers yet. Add demo records in /admin/.';return;}
+ root.innerHTML=data.dealers.map(d=>`<article><h2>${d.full_name}</h2><p>${d.city}, ${d.state}</p><p>${d.address||''}</p><p>${d.phone||''}</p><a href="/api/dealers/${d.id}/">View dealer JSON</a> · <a href="/api/dealers/${d.id}/reviews/">Reviews</a></article>`).join('');
+}).catch(()=>document.getElementById('dealers').textContent='Could not load dealers.');
+</script></body></html>

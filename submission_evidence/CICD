@@ -1,0 +1,7 @@
+EXAMPLE ONLY — not a real GitHub Actions run
+
+Run actions/checkout@v4
+Set up Python
+Install dependencies
+Run python manage.py check
+Process completed with exit code 0
